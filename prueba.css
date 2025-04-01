@@ -11,7 +11,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(114, 114, 114),rgb(114, 114, 114)),url(img/bg.jpg);
+    background: linear-gradient(rgb(114, 114, 114),rgb(114, 114, 114)),url(xz.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
