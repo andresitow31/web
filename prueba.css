@@ -11,7 +11,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)), url(xz.jpg);
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(xz.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ form > button {
     width: 100%;
     padding: 10px;
     outline: none;
-    background: rgb(114, 114, 114;
+    background: rgb(0, 0, 0);
     color:#ffeded;
     border:none;
     transition: .1s;
@@ -437,7 +437,7 @@ input {
         top: 100%;
         left: 0;
         right: 0;
-        background-color:  rgb(195, 200, 188);
+        background-color:  rgb(214, 210, 19);
         display: none;
     }
 
