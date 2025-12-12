@@ -110,7 +110,6 @@ img{
     margin-right: 25px;
     font-size: 17px;
     color: white;
-
 }
 
 .btn-1:hover {
@@ -138,11 +137,17 @@ img{
     width: 150px;
 }
 
+/* --- SOLUCIÓN CENTRADO Y AJUSTE RESPONSIVO --- */
 .Product-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* Configuración adaptable: hace que los productos se 'corran' a la línea de abajo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 50px;
+    /* Nuevo: El contenedor ocupa solo el ancho necesario y se centra */
+    max-width: fit-content; 
+    margin: 0 auto; 
 }
+/* ------------------------------------ */
 
 .Product-1 {
     background-color: rgb(195, 200, 188);
@@ -158,26 +163,30 @@ img{
     margin-bottom: 20px;
 }
 
+/* --- SOLUCIÓN BOTÓN DEBAJO DEL PRECIO --- */
 .price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block; /* Hace que precio y botón se apilen verticalmente */
 }
 
 .price p {
     font-size: 17px;
     color: black;
+    margin-bottom: 15px; /* Espacio entre el precio y el botón */
 }
+/* ------------------------------------ */
 
 .btn-2 {
     padding: 5px 25px;
     background-color: rgb(175, 168, 168);
     margin-right: 0;
-    align-items: center;
+    /* align-items: center; -> No necesario con display: block en .price */
+    color: black;
+    border: 1px solid black; 
+    border-radius: 25px;
 }
 
 .contact {
-    padding: 150 px 300px;
+    padding: 150px 300px;
 }
 
 .contact-content {
@@ -297,10 +306,11 @@ input {
         padding: 30px;
     }
 
-    .Product-content {
+    /* La grilla ahora es flexible, no necesita esta sobreescritura */
+    /* .Product-content {
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
-    }
+    } */
 
     .Product-1  img {
         width: 100%;
@@ -327,5 +337,4 @@ input {
     .link ul {
         margin-top: 20px;
     }
-
 }
